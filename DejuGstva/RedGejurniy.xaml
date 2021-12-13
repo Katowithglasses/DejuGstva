@@ -1,0 +1,22 @@
+﻿<Page x:Class="DejuGstva.RedGejurniy"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DejuGstva"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RedGejurniy">
+
+    <Grid>
+        <GroupBox Grid.Column="1">
+            <StackPanel>
+                <TextBlock Text="Изменить группу"/>
+                <TextBox Text="{Binding Group}" DataContext="{Binding Student}"/>
+                <TextBlock Text="Измегнить ФИО"/>
+                <TextBox Text="{Binding FIO}" DataContext="{Binding Student}"/>
+                <Button Content="Сохранить" Command="{Binding CreateStudent}"/>
+            </StackPanel>
+        </GroupBox>
+    </Grid>
+</Page>
